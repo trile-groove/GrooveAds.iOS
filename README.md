@@ -1,1 +1,1 @@
-# g-ads.sdk.ios
+# Groove Ads iOS
