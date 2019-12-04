@@ -1,0 +1,6 @@
+framework module Pods_GrooveAds_GrooveAdsTests {
+  umbrella header "Pods-GrooveAds-GrooveAdsTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

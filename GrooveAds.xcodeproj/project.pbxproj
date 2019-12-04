@@ -3,21 +3,35 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		06B81F28EF56D0E85A9A5FD4 /* Pods_GrooveAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1CB4C37693BE5DB96A5C9B4 /* Pods_GrooveAds.framework */; };
+		16F6939BA083F7C59BB9918D /* Pods_GrooveAds_GrooveAdsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7AB3937E4EC79CF5D358FC3 /* Pods_GrooveAds_GrooveAdsTests.framework */; };
 		52128A27238CCA7F00D02BB4 /* GrooveAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52128A1D238CCA7E00D02BB4 /* GrooveAds.framework */; };
 		52128A2C238CCA7F00D02BB4 /* GrooveAdsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52128A2B238CCA7F00D02BB4 /* GrooveAdsTests.swift */; };
 		52128A2E238CCA7F00D02BB4 /* GrooveAds.h in Headers */ = {isa = PBXBuildFile; fileRef = 52128A20238CCA7E00D02BB4 /* GrooveAds.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		52128A3E238CCF9B00D02BB4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52128A3D238CCF9B00D02BB4 /* AppDelegate.swift */; };
-		52128A40238CCF9B00D02BB4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52128A3F238CCF9B00D02BB4 /* SceneDelegate.swift */; };
-		52128A42238CCF9B00D02BB4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52128A41238CCF9B00D02BB4 /* ContentView.swift */; };
-		52128A44238CCF9F00D02BB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52128A43238CCF9F00D02BB4 /* Assets.xcassets */; };
-		52128A47238CCF9F00D02BB4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52128A46238CCF9F00D02BB4 /* Preview Assets.xcassets */; };
-		52128A4A238CCF9F00D02BB4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52128A48238CCF9F00D02BB4 /* LaunchScreen.storyboard */; };
-		52128A55238CCF9F00D02BB4 /* GrooveAdsExamplesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52128A54238CCF9F00D02BB4 /* GrooveAdsExamplesTests.swift */; };
-		52128A60238CCF9F00D02BB4 /* GrooveAdsExamplesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52128A5F238CCF9F00D02BB4 /* GrooveAdsExamplesUITests.swift */; };
+		5290D77823961A4400CA5102 /* AppVertBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5290D77323961A4400CA5102 /* AppVertBannerView.swift */; };
+		5290D77923961A4400CA5102 /* AppVertItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5290D77423961A4400CA5102 /* AppVertItemView.swift */; };
+		5290D77A23961A4400CA5102 /* AppVertAdsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5290D77523961A4400CA5102 /* AppVertAdsView.swift */; };
+		5290D77B23961A4400CA5102 /* RotationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5290D77623961A4400CA5102 /* RotationViewController.swift */; };
+		5290D77C23961A4400CA5102 /* AppVertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5290D77723961A4400CA5102 /* AppVertViewController.swift */; };
+		5290D78523961CD400CA5102 /* AppVertAd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5290D77F23961CD400CA5102 /* AppVertAd.swift */; };
+		5290D78623961CD400CA5102 /* Campaign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5290D78023961CD400CA5102 /* Campaign.swift */; };
+		5290D78723961CD400CA5102 /* CampaignResponse+Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5290D78123961CD400CA5102 /* CampaignResponse+Error.swift */; };
+		5290D78823961CD400CA5102 /* AdSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5290D78223961CD400CA5102 /* AdSize.swift */; };
+		5290D78923961CD400CA5102 /* DismissRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5290D78323961CD400CA5102 /* DismissRequest.swift */; };
+		5290D78A23961CD400CA5102 /* AdInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5290D78423961CD400CA5102 /* AdInfo.swift */; };
+		5290D78F2396201C00CA5102 /* ConvertibleType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5290D78C2396201C00CA5102 /* ConvertibleType.swift */; };
+		5290D7902396201C00CA5102 /* ApiEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5290D78D2396201C00CA5102 /* ApiEndpoint.swift */; };
+		5290D7912396201C00CA5102 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5290D78E2396201C00CA5102 /* Network.swift */; };
+		5290D798239620A000CA5102 /* UIWindow+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5290D7942396209F00CA5102 /* UIWindow+Extension.swift */; };
+		5290D799239620A000CA5102 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5290D795239620A000CA5102 /* Helper.swift */; };
+		5290D79A239620A000CA5102 /* UIDevice+Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5290D796239620A000CA5102 /* UIDevice+Name.swift */; };
+		5290D79B239620A000CA5102 /* UserDefaults+AppVertEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5290D797239620A000CA5102 /* UserDefaults+AppVertEvent.swift */; };
+		5290D79E2396212200CA5102 /* AppVert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5290D79C2396212200CA5102 /* AppVert.swift */; };
+		5290D79F2396212200CA5102 /* AppVertAdsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5290D79D2396212200CA5102 /* AppVertAdsManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,43 +42,41 @@
 			remoteGlobalIDString = 52128A1C238CCA7E00D02BB4;
 			remoteInfo = GrooveAds;
 		};
-		52128A51238CCF9F00D02BB4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 52128A14238CCA7E00D02BB4 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 52128A3A238CCF9B00D02BB4;
-			remoteInfo = GrooveAdsExamples;
-		};
-		52128A5C238CCF9F00D02BB4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 52128A14238CCA7E00D02BB4 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 52128A3A238CCF9B00D02BB4;
-			remoteInfo = GrooveAdsExamples;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		29439623317075C470F5E1B6 /* Pods-GrooveAds.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrooveAds.debug.xcconfig"; path = "Target Support Files/Pods-GrooveAds/Pods-GrooveAds.debug.xcconfig"; sourceTree = "<group>"; };
 		52128A1D238CCA7E00D02BB4 /* GrooveAds.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GrooveAds.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		52128A20238CCA7E00D02BB4 /* GrooveAds.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GrooveAds.h; sourceTree = "<group>"; };
 		52128A21238CCA7E00D02BB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		52128A26238CCA7F00D02BB4 /* GrooveAdsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GrooveAdsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		52128A2B238CCA7F00D02BB4 /* GrooveAdsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrooveAdsTests.swift; sourceTree = "<group>"; };
 		52128A2D238CCA7F00D02BB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		52128A3B238CCF9B00D02BB4 /* GrooveAdsExamples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GrooveAdsExamples.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		52128A3D238CCF9B00D02BB4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		52128A3F238CCF9B00D02BB4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		52128A41238CCF9B00D02BB4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		52128A43238CCF9F00D02BB4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		52128A46238CCF9F00D02BB4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		52128A49238CCF9F00D02BB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		52128A4B238CCF9F00D02BB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		52128A50238CCF9F00D02BB4 /* GrooveAdsExamplesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GrooveAdsExamplesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		52128A54238CCF9F00D02BB4 /* GrooveAdsExamplesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrooveAdsExamplesTests.swift; sourceTree = "<group>"; };
-		52128A56238CCF9F00D02BB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		52128A5B238CCF9F00D02BB4 /* GrooveAdsExamplesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GrooveAdsExamplesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		52128A5F238CCF9F00D02BB4 /* GrooveAdsExamplesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrooveAdsExamplesUITests.swift; sourceTree = "<group>"; };
-		52128A61238CCF9F00D02BB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5290D77323961A4400CA5102 /* AppVertBannerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppVertBannerView.swift; sourceTree = "<group>"; };
+		5290D77423961A4400CA5102 /* AppVertItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppVertItemView.swift; sourceTree = "<group>"; };
+		5290D77523961A4400CA5102 /* AppVertAdsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppVertAdsView.swift; sourceTree = "<group>"; };
+		5290D77623961A4400CA5102 /* RotationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RotationViewController.swift; sourceTree = "<group>"; };
+		5290D77723961A4400CA5102 /* AppVertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppVertViewController.swift; sourceTree = "<group>"; };
+		5290D77F23961CD400CA5102 /* AppVertAd.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppVertAd.swift; sourceTree = "<group>"; };
+		5290D78023961CD400CA5102 /* Campaign.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Campaign.swift; sourceTree = "<group>"; };
+		5290D78123961CD400CA5102 /* CampaignResponse+Error.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CampaignResponse+Error.swift"; sourceTree = "<group>"; };
+		5290D78223961CD400CA5102 /* AdSize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdSize.swift; sourceTree = "<group>"; };
+		5290D78323961CD400CA5102 /* DismissRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DismissRequest.swift; sourceTree = "<group>"; };
+		5290D78423961CD400CA5102 /* AdInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdInfo.swift; sourceTree = "<group>"; };
+		5290D78C2396201C00CA5102 /* ConvertibleType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConvertibleType.swift; sourceTree = "<group>"; };
+		5290D78D2396201C00CA5102 /* ApiEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiEndpoint.swift; sourceTree = "<group>"; };
+		5290D78E2396201C00CA5102 /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		5290D7942396209F00CA5102 /* UIWindow+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIWindow+Extension.swift"; sourceTree = "<group>"; };
+		5290D795239620A000CA5102 /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		5290D796239620A000CA5102 /* UIDevice+Name.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIDevice+Name.swift"; sourceTree = "<group>"; };
+		5290D797239620A000CA5102 /* UserDefaults+AppVertEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UserDefaults+AppVertEvent.swift"; sourceTree = "<group>"; };
+		5290D79C2396212200CA5102 /* AppVert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppVert.swift; sourceTree = "<group>"; };
+		5290D79D2396212200CA5102 /* AppVertAdsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppVertAdsManager.swift; sourceTree = "<group>"; };
+		8DA2772FFCACFDE4252B888F /* Pods-GrooveAds-GrooveAdsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrooveAds-GrooveAdsTests.debug.xcconfig"; path = "Target Support Files/Pods-GrooveAds-GrooveAdsTests/Pods-GrooveAds-GrooveAdsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A7AB3937E4EC79CF5D358FC3 /* Pods_GrooveAds_GrooveAdsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GrooveAds_GrooveAdsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBDFDA91A751ECE2425217CD /* Pods-GrooveAds-GrooveAdsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrooveAds-GrooveAdsTests.release.xcconfig"; path = "Target Support Files/Pods-GrooveAds-GrooveAdsTests/Pods-GrooveAds-GrooveAdsTests.release.xcconfig"; sourceTree = "<group>"; };
+		C1CB4C37693BE5DB96A5C9B4 /* Pods_GrooveAds.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GrooveAds.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA177C05D2A6D805DD882BE0 /* Pods-GrooveAds.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrooveAds.release.xcconfig"; path = "Target Support Files/Pods-GrooveAds/Pods-GrooveAds.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06B81F28EF56D0E85A9A5FD4 /* Pods_GrooveAds.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,27 +93,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				52128A27238CCA7F00D02BB4 /* GrooveAds.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		52128A38238CCF9B00D02BB4 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		52128A4D238CCF9F00D02BB4 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		52128A58238CCF9F00D02BB4 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				16F6939BA083F7C59BB9918D /* Pods_GrooveAds_GrooveAdsTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,10 +105,9 @@
 			children = (
 				52128A1F238CCA7E00D02BB4 /* GrooveAds */,
 				52128A2A238CCA7F00D02BB4 /* GrooveAdsTests */,
-				52128A3C238CCF9B00D02BB4 /* GrooveAdsExamples */,
-				52128A53238CCF9F00D02BB4 /* GrooveAdsExamplesTests */,
-				52128A5E238CCF9F00D02BB4 /* GrooveAdsExamplesUITests */,
 				52128A1E238CCA7E00D02BB4 /* Products */,
+				7EBC99AC2224C32AF9A06D6E /* Pods */,
+				5B64BA934430866FE2502BB4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -124,9 +116,6 @@
 			children = (
 				52128A1D238CCA7E00D02BB4 /* GrooveAds.framework */,
 				52128A26238CCA7F00D02BB4 /* GrooveAdsTests.xctest */,
-				52128A3B238CCF9B00D02BB4 /* GrooveAdsExamples.app */,
-				52128A50238CCF9F00D02BB4 /* GrooveAdsExamplesTests.xctest */,
-				52128A5B238CCF9F00D02BB4 /* GrooveAdsExamplesUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -134,6 +123,7 @@
 		52128A1F238CCA7E00D02BB4 /* GrooveAds */ = {
 			isa = PBXGroup;
 			children = (
+				5290D7922396204300CA5102 /* Source */,
 				52128A20238CCA7E00D02BB4 /* GrooveAds.h */,
 				52128A21238CCA7E00D02BB4 /* Info.plist */,
 			);
@@ -149,44 +139,83 @@
 			path = GrooveAdsTests;
 			sourceTree = "<group>";
 		};
-		52128A3C238CCF9B00D02BB4 /* GrooveAdsExamples */ = {
+		5290D77E23961CA200CA5102 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				52128A3D238CCF9B00D02BB4 /* AppDelegate.swift */,
-				52128A3F238CCF9B00D02BB4 /* SceneDelegate.swift */,
-				52128A41238CCF9B00D02BB4 /* ContentView.swift */,
-				52128A43238CCF9F00D02BB4 /* Assets.xcassets */,
-				52128A48238CCF9F00D02BB4 /* LaunchScreen.storyboard */,
-				52128A4B238CCF9F00D02BB4 /* Info.plist */,
-				52128A45238CCF9F00D02BB4 /* Preview Content */,
+				5290D78423961CD400CA5102 /* AdInfo.swift */,
+				5290D78223961CD400CA5102 /* AdSize.swift */,
+				5290D77F23961CD400CA5102 /* AppVertAd.swift */,
+				5290D78023961CD400CA5102 /* Campaign.swift */,
+				5290D78123961CD400CA5102 /* CampaignResponse+Error.swift */,
+				5290D78323961CD400CA5102 /* DismissRequest.swift */,
 			);
-			path = GrooveAdsExamples;
+			path = Models;
 			sourceTree = "<group>";
 		};
-		52128A45238CCF9F00D02BB4 /* Preview Content */ = {
+		5290D78B23961D0A00CA5102 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				52128A46238CCF9F00D02BB4 /* Preview Assets.xcassets */,
+				5290D78D2396201C00CA5102 /* ApiEndpoint.swift */,
+				5290D78C2396201C00CA5102 /* ConvertibleType.swift */,
+				5290D78E2396201C00CA5102 /* Network.swift */,
 			);
-			path = "Preview Content";
+			path = Network;
 			sourceTree = "<group>";
 		};
-		52128A53238CCF9F00D02BB4 /* GrooveAdsExamplesTests */ = {
+		5290D7922396204300CA5102 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				52128A54238CCF9F00D02BB4 /* GrooveAdsExamplesTests.swift */,
-				52128A56238CCF9F00D02BB4 /* Info.plist */,
+				5290D79C2396212200CA5102 /* AppVert.swift */,
+				5290D79D2396212200CA5102 /* AppVertAdsManager.swift */,
+				5290D7932396208800CA5102 /* Utilities */,
+				5290D78B23961D0A00CA5102 /* Network */,
+				5290D77E23961CA200CA5102 /* Models */,
+				5292F17B238E6214003E7FD5 /* Views */,
 			);
-			path = GrooveAdsExamplesTests;
+			path = Source;
 			sourceTree = "<group>";
 		};
-		52128A5E238CCF9F00D02BB4 /* GrooveAdsExamplesUITests */ = {
+		5290D7932396208800CA5102 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				52128A5F238CCF9F00D02BB4 /* GrooveAdsExamplesUITests.swift */,
-				52128A61238CCF9F00D02BB4 /* Info.plist */,
+				5290D795239620A000CA5102 /* Helper.swift */,
+				5290D796239620A000CA5102 /* UIDevice+Name.swift */,
+				5290D7942396209F00CA5102 /* UIWindow+Extension.swift */,
+				5290D797239620A000CA5102 /* UserDefaults+AppVertEvent.swift */,
 			);
-			path = GrooveAdsExamplesUITests;
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		5292F17B238E6214003E7FD5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5290D77523961A4400CA5102 /* AppVertAdsView.swift */,
+				5290D77323961A4400CA5102 /* AppVertBannerView.swift */,
+				5290D77423961A4400CA5102 /* AppVertItemView.swift */,
+				5290D77723961A4400CA5102 /* AppVertViewController.swift */,
+				5290D77623961A4400CA5102 /* RotationViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5B64BA934430866FE2502BB4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C1CB4C37693BE5DB96A5C9B4 /* Pods_GrooveAds.framework */,
+				A7AB3937E4EC79CF5D358FC3 /* Pods_GrooveAds_GrooveAdsTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7EBC99AC2224C32AF9A06D6E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				29439623317075C470F5E1B6 /* Pods-GrooveAds.debug.xcconfig */,
+				DA177C05D2A6D805DD882BE0 /* Pods-GrooveAds.release.xcconfig */,
+				8DA2772FFCACFDE4252B888F /* Pods-GrooveAds-GrooveAdsTests.debug.xcconfig */,
+				BBDFDA91A751ECE2425217CD /* Pods-GrooveAds-GrooveAdsTests.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +236,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 52128A31238CCA7F00D02BB4 /* Build configuration list for PBXNativeTarget "GrooveAds" */;
 			buildPhases = (
+				052A6F53C70A53C0D93B5466 /* [CP] Check Pods Manifest.lock */,
 				52128A18238CCA7E00D02BB4 /* Headers */,
 				52128A19238CCA7E00D02BB4 /* Sources */,
 				52128A1A238CCA7E00D02BB4 /* Frameworks */,
@@ -225,9 +255,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 52128A34238CCA7F00D02BB4 /* Build configuration list for PBXNativeTarget "GrooveAdsTests" */;
 			buildPhases = (
+				6F41B2B3D1E132FCA5CC9D5A /* [CP] Check Pods Manifest.lock */,
 				52128A22238CCA7F00D02BB4 /* Sources */,
 				52128A23238CCA7F00D02BB4 /* Frameworks */,
 				52128A24238CCA7F00D02BB4 /* Resources */,
+				859A6CD229D7CE09811B1E12 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -238,59 +270,6 @@
 			productName = GrooveAdsTests;
 			productReference = 52128A26238CCA7F00D02BB4 /* GrooveAdsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		52128A3A238CCF9B00D02BB4 /* GrooveAdsExamples */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 52128A62238CCF9F00D02BB4 /* Build configuration list for PBXNativeTarget "GrooveAdsExamples" */;
-			buildPhases = (
-				52128A37238CCF9B00D02BB4 /* Sources */,
-				52128A38238CCF9B00D02BB4 /* Frameworks */,
-				52128A39238CCF9B00D02BB4 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = GrooveAdsExamples;
-			productName = GrooveAdsExamples;
-			productReference = 52128A3B238CCF9B00D02BB4 /* GrooveAdsExamples.app */;
-			productType = "com.apple.product-type.application";
-		};
-		52128A4F238CCF9F00D02BB4 /* GrooveAdsExamplesTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 52128A65238CCF9F00D02BB4 /* Build configuration list for PBXNativeTarget "GrooveAdsExamplesTests" */;
-			buildPhases = (
-				52128A4C238CCF9F00D02BB4 /* Sources */,
-				52128A4D238CCF9F00D02BB4 /* Frameworks */,
-				52128A4E238CCF9F00D02BB4 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				52128A52238CCF9F00D02BB4 /* PBXTargetDependency */,
-			);
-			name = GrooveAdsExamplesTests;
-			productName = GrooveAdsExamplesTests;
-			productReference = 52128A50238CCF9F00D02BB4 /* GrooveAdsExamplesTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		52128A5A238CCF9F00D02BB4 /* GrooveAdsExamplesUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 52128A68238CCF9F00D02BB4 /* Build configuration list for PBXNativeTarget "GrooveAdsExamplesUITests" */;
-			buildPhases = (
-				52128A57238CCF9F00D02BB4 /* Sources */,
-				52128A58238CCF9F00D02BB4 /* Frameworks */,
-				52128A59238CCF9F00D02BB4 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				52128A5D238CCF9F00D02BB4 /* PBXTargetDependency */,
-			);
-			name = GrooveAdsExamplesUITests;
-			productName = GrooveAdsExamplesUITests;
-			productReference = 52128A5B238CCF9F00D02BB4 /* GrooveAdsExamplesUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -304,20 +283,10 @@
 				TargetAttributes = {
 					52128A1C238CCA7E00D02BB4 = {
 						CreatedOnToolsVersion = 11.2.1;
+						LastSwiftMigration = 1120;
 					};
 					52128A25238CCA7F00D02BB4 = {
 						CreatedOnToolsVersion = 11.2.1;
-					};
-					52128A3A238CCF9B00D02BB4 = {
-						CreatedOnToolsVersion = 11.2.1;
-					};
-					52128A4F238CCF9F00D02BB4 = {
-						CreatedOnToolsVersion = 11.2.1;
-						TestTargetID = 52128A3A238CCF9B00D02BB4;
-					};
-					52128A5A238CCF9F00D02BB4 = {
-						CreatedOnToolsVersion = 11.2.1;
-						TestTargetID = 52128A3A238CCF9B00D02BB4;
 					};
 				};
 			};
@@ -336,9 +305,6 @@
 			targets = (
 				52128A1C238CCA7E00D02BB4 /* GrooveAds */,
 				52128A25238CCA7F00D02BB4 /* GrooveAdsTests */,
-				52128A3A238CCF9B00D02BB4 /* GrooveAdsExamples */,
-				52128A4F238CCF9F00D02BB4 /* GrooveAdsExamplesTests */,
-				52128A5A238CCF9F00D02BB4 /* GrooveAdsExamplesUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -358,37 +324,97 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		52128A39238CCF9B00D02BB4 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				52128A4A238CCF9F00D02BB4 /* LaunchScreen.storyboard in Resources */,
-				52128A47238CCF9F00D02BB4 /* Preview Assets.xcassets in Resources */,
-				52128A44238CCF9F00D02BB4 /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		52128A4E238CCF9F00D02BB4 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		52128A59238CCF9F00D02BB4 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		052A6F53C70A53C0D93B5466 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GrooveAds-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6F41B2B3D1E132FCA5CC9D5A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GrooveAds-GrooveAdsTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		859A6CD229D7CE09811B1E12 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GrooveAds-GrooveAdsTests/Pods-GrooveAds-GrooveAdsTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GrooveAds-GrooveAdsTests/Pods-GrooveAds-GrooveAdsTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GrooveAds-GrooveAdsTests/Pods-GrooveAds-GrooveAdsTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		52128A19238CCA7E00D02BB4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5290D79B239620A000CA5102 /* UserDefaults+AppVertEvent.swift in Sources */,
+				5290D77923961A4400CA5102 /* AppVertItemView.swift in Sources */,
+				5290D78A23961CD400CA5102 /* AdInfo.swift in Sources */,
+				5290D78523961CD400CA5102 /* AppVertAd.swift in Sources */,
+				5290D7902396201C00CA5102 /* ApiEndpoint.swift in Sources */,
+				5290D78623961CD400CA5102 /* Campaign.swift in Sources */,
+				5290D78723961CD400CA5102 /* CampaignResponse+Error.swift in Sources */,
+				5290D78923961CD400CA5102 /* DismissRequest.swift in Sources */,
+				5290D799239620A000CA5102 /* Helper.swift in Sources */,
+				5290D78823961CD400CA5102 /* AdSize.swift in Sources */,
+				5290D77A23961A4400CA5102 /* AppVertAdsView.swift in Sources */,
+				5290D77B23961A4400CA5102 /* RotationViewController.swift in Sources */,
+				5290D77823961A4400CA5102 /* AppVertBannerView.swift in Sources */,
+				5290D79E2396212200CA5102 /* AppVert.swift in Sources */,
+				5290D79A239620A000CA5102 /* UIDevice+Name.swift in Sources */,
+				5290D798239620A000CA5102 /* UIWindow+Extension.swift in Sources */,
+				5290D77C23961A4400CA5102 /* AppVertViewController.swift in Sources */,
+				5290D7912396201C00CA5102 /* Network.swift in Sources */,
+				5290D78F2396201C00CA5102 /* ConvertibleType.swift in Sources */,
+				5290D79F2396212200CA5102 /* AppVertAdsManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,32 +426,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		52128A37238CCF9B00D02BB4 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				52128A3E238CCF9B00D02BB4 /* AppDelegate.swift in Sources */,
-				52128A40238CCF9B00D02BB4 /* SceneDelegate.swift in Sources */,
-				52128A42238CCF9B00D02BB4 /* ContentView.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		52128A4C238CCF9F00D02BB4 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				52128A55238CCF9F00D02BB4 /* GrooveAdsExamplesTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		52128A57238CCF9F00D02BB4 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				52128A60238CCF9F00D02BB4 /* GrooveAdsExamplesUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -434,28 +434,7 @@
 			target = 52128A1C238CCA7E00D02BB4 /* GrooveAds */;
 			targetProxy = 52128A28238CCA7F00D02BB4 /* PBXContainerItemProxy */;
 		};
-		52128A52238CCF9F00D02BB4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 52128A3A238CCF9B00D02BB4 /* GrooveAdsExamples */;
-			targetProxy = 52128A51238CCF9F00D02BB4 /* PBXContainerItemProxy */;
-		};
-		52128A5D238CCF9F00D02BB4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 52128A3A238CCF9B00D02BB4 /* GrooveAdsExamples */;
-			targetProxy = 52128A5C238CCF9F00D02BB4 /* PBXContainerItemProxy */;
-		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		52128A48238CCF9F00D02BB4 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				52128A49238CCF9F00D02BB4 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		52128A2F238CCA7F00D02BB4 /* Debug */ = {
@@ -580,7 +559,9 @@
 		};
 		52128A32238CCA7F00D02BB4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29439623317075C470F5E1B6 /* Pods-GrooveAds.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -596,6 +577,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.groovetechnology.GrooveAds;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -603,7 +585,9 @@
 		};
 		52128A33238CCA7F00D02BB4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA177C05D2A6D805DD882BE0 /* Pods-GrooveAds.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -626,7 +610,9 @@
 		};
 		52128A35238CCA7F00D02BB4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8DA2772FFCACFDE4252B888F /* Pods-GrooveAds-GrooveAdsTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = GrooveAdsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -643,7 +629,9 @@
 		};
 		52128A36238CCA7F00D02BB4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BBDFDA91A751ECE2425217CD /* Pods-GrooveAds-GrooveAdsTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = GrooveAdsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -655,124 +643,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		52128A63238CCF9F00D02BB4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"GrooveAdsExamples/Preview Content\"";
-				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = GrooveAdsExamples/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.groovetechnology.GrooveAdsExamples;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		52128A64238CCF9F00D02BB4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"GrooveAdsExamples/Preview Content\"";
-				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = GrooveAdsExamples/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.groovetechnology.GrooveAdsExamples;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		52128A66238CCF9F00D02BB4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = GrooveAdsExamplesTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.groovetechnology.GrooveAdsExamplesTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GrooveAdsExamples.app/GrooveAdsExamples";
-			};
-			name = Debug;
-		};
-		52128A67238CCF9F00D02BB4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = GrooveAdsExamplesTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.groovetechnology.GrooveAdsExamplesTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GrooveAdsExamples.app/GrooveAdsExamples";
-			};
-			name = Release;
-		};
-		52128A69238CCF9F00D02BB4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = GrooveAdsExamplesUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.groovetechnology.GrooveAdsExamplesUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = GrooveAdsExamples;
-			};
-			name = Debug;
-		};
-		52128A6A238CCF9F00D02BB4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = GrooveAdsExamplesUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.groovetechnology.GrooveAdsExamplesUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = GrooveAdsExamples;
 			};
 			name = Release;
 		};
@@ -802,33 +672,6 @@
 			buildConfigurations = (
 				52128A35238CCA7F00D02BB4 /* Debug */,
 				52128A36238CCA7F00D02BB4 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		52128A62238CCF9F00D02BB4 /* Build configuration list for PBXNativeTarget "GrooveAdsExamples" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				52128A63238CCF9F00D02BB4 /* Debug */,
-				52128A64238CCF9F00D02BB4 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		52128A65238CCF9F00D02BB4 /* Build configuration list for PBXNativeTarget "GrooveAdsExamplesTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				52128A66238CCF9F00D02BB4 /* Debug */,
-				52128A67238CCF9F00D02BB4 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		52128A68238CCF9F00D02BB4 /* Build configuration list for PBXNativeTarget "GrooveAdsExamplesUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				52128A69238CCF9F00D02BB4 /* Debug */,
-				52128A6A238CCF9F00D02BB4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
