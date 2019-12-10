@@ -150,7 +150,12 @@ public class AppVert {
         
         DispatchQueue.main.asyncAfter(deadline: .now() + delay) { [weak self] in
             guard let `self` = self else {return}
-            self.appWindow = UIApplication.shared.keyWindow
+            self.appWindow = UIApplication.shared.connectedScenes
+            .filter({$0.activationState == .foregroundActive})
+            .map({$0 as? UIWindowScene})
+            .compactMap({$0})
+            .first?.windows
+            .filter({$0.isKeyWindow}).first
             
             if let rootViewControllerID = rootViewControllerID {
                 guard let currentRoot = self.appWindow?.topMostViewController(), String(describing: currentRoot) == rootViewControllerID else {

@@ -74,12 +74,12 @@ class AppVertViewController: RotationViewController {
         AppVert.shared.dismiss(event: event, dismissalEvent: .clickAd)
         if let urlString = campaign?.linkUrl,
             let url = URL(string: urlString) {
-            UIApplication.shared.openURL(url)
+            UIApplication.shared.open(url)
         }
     }
     
     func setCampaign(_ campaign: Campaign, for event: AppVertEvent) {
-        setCampaign(campaign, for: event)
+        setCampaign(campaign, for: event.rawValue)
     }
     
     func setCampaign(_ campaign: Campaign, for event: String) {
@@ -89,11 +89,11 @@ class AppVertViewController: RotationViewController {
         
         if let source = campaign.content?.source,
             let url = URL(string: source) {
-            imageView.kf.setImage(with: url, completionHandler: { [weak self] (image, _, _, _) in
+            imageView.kf.setImage(with: url) {(image, _, _, _) in
                 if let image = image {
-                    self?.updateImageSize(image.size)
+                    self.updateImageSize(image.size)
                 }
-            })
+            }
         }
     }
     

@@ -45,7 +45,7 @@ public class AppVertAdsView: UIView {
     @objc private func adTriggered() {
         if let urlString = campaign?.linkUrl,
             let url = URL(string: urlString) {
-            UIApplication.shared.openURL(url)
+            UIApplication.shared.open(url)
         }
     }
     
