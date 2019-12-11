@@ -53,10 +53,24 @@ public class AppVert {
     public var backgroundColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.8)
 
     private lazy var window: UIWindow = {
-        let window = UIWindow(frame: UIScreen.main.bounds)
-        window.windowLevel = UIWindow.Level.normal
-        window.rootViewController = adViewController
-        return window
+        let windowScene = UIApplication.shared
+                        .connectedScenes
+                        .filter { $0.activationState == .foregroundActive }
+                        .first
+        if let windowScene = windowScene as? UIWindowScene {
+            let window = UIWindow(windowScene: windowScene)
+            window.frame = UIScreen.main.bounds
+            window.backgroundColor = .clear
+            window.windowLevel = UIWindow.Level.statusBar + 1
+            window.rootViewController = adViewController
+            return window
+        }
+        else {
+            let window = UIWindow(frame: UIScreen.main.bounds)
+            window.windowLevel = UIWindow.Level.normal
+            window.rootViewController = adViewController
+            return window
+        }
     }()
     private lazy var adViewController: AppVertViewController = {AppVertViewController()}()
     private weak var appWindow: UIWindow?

@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "GrooveAds"
-  spec.version      = "0.0.1"
+  spec.version      = "0.0.2"
   spec.summary      = "An open source Ads SDK for iOS."
 
   # This description is used to generate tags and improve search results.
@@ -71,7 +71,7 @@ This is an open source Ads SDK for iOS to integrate with Ads Portal.
   # spec.osx.deployment_target = "10.7"
   # spec.watchos.deployment_target = "2.0"
   # spec.tvos.deployment_target = "9.0"
-  spec.ios.deployment_target = "12.1"
+  spec.ios.deployment_target = "13.2"
   spec.swift_version = "4.2"
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
