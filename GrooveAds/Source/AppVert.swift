@@ -52,28 +52,28 @@ public class AppVert {
     public var closeIcon: UIImage?
     public var backgroundColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.8)
 
-    private lazy var window: UIWindow = {
-        let windowScene = UIApplication.shared
-                        .connectedScenes
-                        .filter { $0.activationState == .foregroundActive }
-                        .first
-        if let windowScene = windowScene as? UIWindowScene {
-            let window = UIWindow(windowScene: windowScene)
-            window.frame = UIScreen.main.bounds
-            window.backgroundColor = .clear
-            window.windowLevel = UIWindow.Level.statusBar + 1
-            window.rootViewController = adViewController
-            return window
-        }
-        else {
-            let window = UIWindow(frame: UIScreen.main.bounds)
-            window.windowLevel = UIWindow.Level.normal
-            window.rootViewController = adViewController
-            return window
-        }
-    }()
+    private var normalWindow: UIWindow = UIWindow()
     private lazy var adViewController: AppVertViewController = {AppVertViewController()}()
-    private weak var appWindow: UIWindow?
+    private var popupWindow: UIWindow?
+    
+    func makeSelfKeyWindow() {
+        popupWindow = rightWindow()
+        popupWindow?.frame = UIScreen.main.bounds
+        popupWindow?.windowLevel = UIWindow.Level.statusBar + 1
+        popupWindow?.rootViewController = adViewController
+        popupWindow?.makeKeyAndVisible()
+    }
+    
+    func rightWindow() -> UIWindow {
+        let windowScene = UIApplication.shared
+            .connectedScenes
+            .filter { $0.activationState == .foregroundActive }
+            .first
+        if let windowScene = windowScene as? UIWindowScene {
+            return UIWindow(windowScene: windowScene)
+        }
+        return UIWindow()
+    }
 
     private init() {
     }
@@ -155,28 +155,11 @@ public class AppVert {
     }
     
     private func showAd(for event: String, campaign: Campaign, rootViewControllerID: String?) {
-        if window.isKeyWindow {
-            print("An add is showing")
-            return
-        }
 
         let delay = Double(campaign.delay ?? 0)
         
         DispatchQueue.main.asyncAfter(deadline: .now() + delay) { [weak self] in
             guard let `self` = self else {return}
-            self.appWindow = UIApplication.shared.connectedScenes
-            .filter({$0.activationState == .foregroundActive})
-            .map({$0 as? UIWindowScene})
-            .compactMap({$0})
-            .first?.windows
-            .filter({$0.isKeyWindow}).first
-            
-            if let rootViewControllerID = rootViewControllerID {
-                guard let currentRoot = self.appWindow?.topMostViewController(), String(describing: currentRoot) == rootViewControllerID else {
-                    print("\n\n\(rootViewControllerID) is not on top anymore")
-                    return
-                }
-            }
             
             let appShowingFrequency = UserDefaults.getAdsShowingFrequency()
             var appShowingCount = UserDefaults.getAdsCountOpen()
@@ -193,7 +176,7 @@ public class AppVert {
             
             let adInfo = AdInfo(campaignId: campaign.id, startTime: Date())
             UserDefaults.setAddInfo(adInfo, for: event)
-            self.window.makeKeyAndVisible()
+            
             self.adViewController.setCampaign(campaign, for: event)
             self.adViewController.view.alpha = 0
             
@@ -204,9 +187,10 @@ public class AppVert {
     }
     
     private func hideAd() {
-        appWindow?.makeKeyAndVisible()
-        appWindow = nil
-        window.isHidden = true
+        self.adViewController.view.alpha = 0
+        popupWindow?.rootViewController = nil
+        popupWindow = nil
+        normalWindow.makeKeyAndVisible()
     }
     
     public func setShowingFrequency(numberOfFrequency: Int) {
