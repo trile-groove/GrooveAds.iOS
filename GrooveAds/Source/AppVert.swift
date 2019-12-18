@@ -158,6 +158,8 @@ public class AppVert {
 
         let delay = Double(campaign.delay ?? 0)
         
+        let popupView = self.adViewController.view;
+        
         DispatchQueue.main.asyncAfter(deadline: .now() + delay) { [weak self] in
             guard let `self` = self else {return}
             
@@ -178,11 +180,15 @@ public class AppVert {
             UserDefaults.setAddInfo(adInfo, for: event)
             
             self.adViewController.setCampaign(campaign, for: event)
-            self.adViewController.view.alpha = 0
+            popupView?.alpha = 0
             
             UIView.animate(withDuration: 0.25, animations: {
-                self.adViewController.view.alpha = 1
-            }, completion: nil)
+                popupView?.alpha = 1
+            }, completion: { _ in
+                if let self_ = self as? UIViewController {
+                    self.adViewController.didMove(toParent: self_)
+                }
+            })
         }
     }
     
