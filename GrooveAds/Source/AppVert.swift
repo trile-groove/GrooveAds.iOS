@@ -126,7 +126,7 @@ public class AppVert {
         print("request \(request)")
         var rootViewControllerID: String?
         if let rootViewController = rootViewController {
-            rootViewControllerID = String(describing: rootViewController)
+            //rootViewControllerID = String(describing: rootViewController)
         }
         
         Network.shared.fetchCampaign(request) { [weak self] (response) in
@@ -169,13 +169,6 @@ public class AppVert {
             .compactMap({$0})
             .first?.windows
             .filter({$0.isKeyWindow}).first
-            
-            if let rootViewControllerID = rootViewControllerID {
-                guard let currentRoot = self.appWindow?.topMostViewController(), String(describing: currentRoot) == rootViewControllerID else {
-                    print("\n\n\(rootViewControllerID) is not on top anymore")
-                    return
-                }
-            }
             
             let appShowingFrequency = UserDefaults.getAdsShowingFrequency()
             var appShowingCount = UserDefaults.getAdsCountOpen()
