@@ -124,36 +124,32 @@ public class AppVert {
             height: nil)
         
         print("request \(request)")
-        var rootViewControllerID: String?
-        if rootViewController != nil {
-            rootViewControllerID = String(describing: rootViewController)
-        }
         
         Network.shared.fetchCampaign(request) { [weak self] (response) in
             switch response {
             case .success(let campaign):
                 print(campaign)
-                self?.downloadAd(for: event, campaign: campaign, rootViewControllerID: rootViewControllerID)
+                self?.downloadAd(for: event, campaign: campaign)
             case .error(_):
                 break
             }
         }
     }
 
-    private func downloadAd(for event: AppVertEvent, campaign: Campaign, rootViewControllerID: String?) {
-        downloadAd(for: event.rawValue, campaign: campaign, rootViewControllerID: rootViewControllerID)
+    private func downloadAd(for event: AppVertEvent, campaign: Campaign) {
+        downloadAd(for: event.rawValue, campaign: campaign)
     }
     
-    private func downloadAd(for event: String, campaign: Campaign, rootViewControllerID: String?) {
+    private func downloadAd(for event: String, campaign: Campaign) {
         if let source = campaign.content?.source,
             let url = URL(string: source) {
             KingfisherManager.shared.retrieveImage(with: url, options: nil, progressBlock: nil) { [weak self] (_, _, _, _) in
-                self?.showAd(for: event, campaign: campaign, rootViewControllerID: rootViewControllerID)
+                self?.showAd(for: event, campaign: campaign)
             }
         }
     }
     
-    private func showAd(for event: String, campaign: Campaign, rootViewControllerID: String?) {
+    private func showAd(for event: String, campaign: Campaign) {
         if window.isKeyWindow {
             print("An add is showing")
             return
@@ -169,13 +165,6 @@ public class AppVert {
             .compactMap({$0})
             .first?.windows
             .filter({$0.isKeyWindow}).first
-            
-            if let rootViewControllerID = rootViewControllerID {
-                guard let currentRoot = self.appWindow?.topMostViewController(), String(describing: currentRoot) == rootViewControllerID else {
-                    print("\n\n\(rootViewControllerID) is not on top anymore")
-                    return
-                }
-            }
             
             let appShowingFrequency = UserDefaults.getAdsShowingFrequency()
             var appShowingCount = UserDefaults.getAdsCountOpen()
